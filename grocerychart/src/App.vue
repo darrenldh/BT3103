@@ -2,14 +2,14 @@
   <div id="app">    
     <app-header v-bind:title="msg"></app-header>
     <router-view></router-view>
-    <app-footer></app-footer>
+    
   </div>
 </template>
 
 <script>
 //Registering components Locally
 import Header from './components/Header.vue'
-import Footer from './components/Footer.vue'
+// import Footer from './components/Footer.vue'
 //import PageContent from './components/PageContent.vue'
 
 export default {
@@ -27,13 +27,13 @@ export default {
                     {name:'Peanut Butter',image:'/assets/peanutbutter.jpeg',show:false},
                     {name:'Strawberries',image:'/assets/strawberries.jpg',show:false}
                     ],
-      msg:"Grocery"
+      msg:"Bubble Chart"
           }
   },
   components: {
     //Registering with a name
     'app-header':Header,
-    'app-footer':Footer
+    // 'app-footer':Footer
     //Registering without a name
     //PageContent
   }
